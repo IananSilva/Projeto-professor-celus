@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escola Educádario Aurora - Home</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Importa o arquivo de estilos principal -->
+    <link rel="stylesheet" href="novo.css"> <!-- Importa outro arquivo de estilos (novo.css) -->
+    <script src="novo.js" defer></script> <!-- Importa o arquivo JavaScript novo.js com atributo defer -->
+    <link rel="shortcut icon" href="imagens/teu fundo.png" type="imagens/favicon"> <!-- Ícone da página -->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">  <img src="imagens/teu fundo.png" height="100" width="100"></a> <!-- Imagem do logo -->
+            </div>
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li> <!-- Link para a página inicial -->
+                        <li><a href="sobre-nos.html">Sobre Nós</a></li> <!-- Link para a página Sobre Nós -->
+                        <li><a href="ensino.html">Ensino</a></li> <!-- Link para a página de Ensino -->
+                        <li><a href="matricula.html">Matricula</a></li> <!-- Link para a página de Admissões -->
+                        <li><a href="contato.html">Contato</a></li> <!-- Link para a página de Contato -->
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Bem-vindo à Escola Educádario Aurora</h2> <!-- Título da seção de boas-vindas -->
+            <p>Oferecemos um ambiente seguro e estimulante para o desenvolvimento das crianças.</p> <!-- Descrição da creche -->
+        </div>
+    </section>
+
+    <section class="slider">
+        <div class="slider-content">
+            <input type="radio" name="btn-radio" id="radio1"> <!-- Botão de rádio para o slide 1 -->
+            <input type="radio" name="btn-radio" id="radio2"> <!-- Botão de rádio para o slide 2 -->
+
+            <div class="slide-box primeiro">
+                <img class="imgcadeira" src="imagens/slide1.jpg" height="450" width="300"> <!-- Slide 1 -->
+            </div>
+            <div class="slide-box segundo">
+                <img class="imgpc" src="imagens/slide2.jpg" height="450" width="300"> <!-- Slide 2 -->
+            </div>
+
+            <div class="nav-auto">
+                <div class="auto-bnt1"></div> <!-- Botão de navegação automática 1 -->
+                <div class="auto-bnt2"></div> <!-- Botão de navegação automática 2 -->
+            </div>
+
+            <div class="nav-manual"> 
+                <label for="radio1" class="manual-btn"></label> <!-- Botão de navegação manual para slide 1 -->
+                <label for="radio2" class="manual-btn"></label> <!-- Botão de navegação manual para slide 2 -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <table> <!-- Tabela com links para redes sociais -->
+                <th>Nossos Contatos:</th>
+                <th><a href="https://www.instagram.com/educandarioaurora/"><img src="imagens/insta.png" alt=""></a></th> <!-- Link para Instagram -->
+                <th><a href="https://www.facebook.com/"><img src="imagens/facebook racista-fotor-bg-remover-2024072592026.png" height="40" width="40"></a></th> <!-- Link para Facebook -->
+                <th><a href="https://web.whatsapp.com/"><img src="imagens/zap zap-fotor-bg-remover-2024072593527.png" height="45" width="45"></a></th> <!-- Link para WhatsApp -->
+            </table> 
+            <!-- Rodapé com informações de copyright -->
+            <p>&copy; 2024 Escola Educádario Aurora. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

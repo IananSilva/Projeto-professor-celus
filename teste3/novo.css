@@ -1,0 +1,85 @@
+/* Estilos do slider */
+/* Estiliza a seção principal do slider */
+section.slider {
+    margin: auto; /* Centraliza o slider horizontalmente */
+    width: 100%; /* Define a largura do slider como 100% da largura do contêiner pai */
+    height: auto; /* Define a altura automaticamente com base no conteúdo */
+    padding: 0; /* Remove o preenchimento interno do slider */
+    overflow: hidden; /* Esconde qualquer conteúdo que exceda a área do slider */
+}
+
+/* Estiliza o contêiner de conteúdo do slider */
+.slider-content {
+    display: flex; /* Usa Flexbox para organizar os slides horizontalmente */
+    width: 400%; /* Define a largura como 400% da largura do slider para acomodar todos os slides lado a lado */
+    height: auto; /* Define a altura automaticamente com base no conteúdo */
+    transition: 1s; /* Aplica uma transição suave de 1 segundo para mudanças na largura */
+}
+
+/* Esconde os inputs do tipo radio (para navegação) */
+.slider-content input {
+    display: none; /* Não exibe os inputs do tipo radio */
+    position: fixed; /* Posiciona os inputs de forma fixa */
+}
+
+/* Estiliza cada caixa de slide individualmente */
+.slide-box {
+    width: 25%; /* Define a largura de cada slide como 25% da largura total do slider */
+    height: auto; /* Define a altura automaticamente com base no conteúdo */
+    position: relative; /* Define o posicionamento relativo para posicionar elementos filhos */
+    text-align: center; /* Centraliza o texto dentro da caixa de slide */
+    transition: 1.6s; /* Aplica uma transição suave de 1.6 segundos para mudanças */
+}
+
+/* Define o estilo das imagens dentro de cada slide */
+.slide-box img {
+    width: 100%; /* Define a largura das imagens como 100% da largura da caixa de slide */
+}
+
+/* Estiliza os botões de navegação manual */
+.nav-manual {
+    position: absolute; /* Posiciona a navegação manual de forma absoluta em relação ao slider */
+    width: 100%; /* Define a largura da navegação manual como 100% da largura do slider */
+    bottom: -150px; /* Posiciona a navegação manual 150px abaixo do slider */
+    margin-top: 1%; /* Adiciona uma margem superior de 1% */
+    display: flex; /* Usa Flexbox para alinhar os botões horizontalmente */
+    justify-content: center; /* Centraliza os botões horizontalmente */
+}
+
+/* Estiliza os botões de navegação manual */
+.nav-manual .manual-btn {
+    border: 2px solid #000000; /* Adiciona uma borda preta de 2px ao redor dos botões */
+    padding: 15px; /* Adiciona um preenchimento interno de 15px ao redor dos botões */
+    border-radius: 50%; /* Torna os botões circulares */
+    cursor: pointer; /* Define o cursor como uma mãozinha ao passar sobre o botão */
+    transition: 1.6s; /* Aplica uma transição suave de 1.6 segundos para mudanças */
+}
+
+/* Adiciona uma margem direita aos botões, exceto ao último botão */
+.nav-manual .manual-btn:not(:last-child),
+.nav-auto div:not(:last-child) {
+    margin-right: 10px; /* Adiciona uma margem direita de 10px */
+}
+
+/* Estiliza o efeito de hover nos botões de navegação manual */
+.nav-manual .manual-btn:hover {
+    background-color: rgb(0, 0, 0); /* Muda a cor de fundo dos botões para preto ao passar o mouse sobre eles */
+}
+
+/* Estiliza a navegação automática com base no estado dos inputs do tipo radio */
+#radio1:checked ~ .nav-auto .auto-btn1 {
+    background-color: #000000; /* Muda a cor de fundo do botão automático 1 para preto quando o radio1 está selecionado */
+}
+
+#radio2:checked ~ .nav-auto .auto-btn2 {
+    background-color: #000000; /* Muda a cor de fundo do botão automático 2 para preto quando o radio2 está selecionado */
+}
+
+/* Estiliza o slider com base no estado dos inputs do tipo radio */
+#radio1:checked ~ .primeiro {
+    margin-left: 0%; /* Define o deslizamento para 0% (exibe o primeiro slide) quando o radio1 está selecionado */
+}
+
+#radio2:checked ~ .primeiro {
+    margin-left: -25%; /* Define o deslizamento para -25% (exibe o segundo slide) quando o radio2 está selecionado */
+}
